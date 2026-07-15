@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishaku Andrawus | Academic Portfolio</title>
+    <meta name="description"
+        content="Personal academic portfolio and student management platform for Ishaku Andrawus, Software Engineering.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="primary">
+            <a href="index.html" class="brand"><span class="brand-mark">IS</span> Ishaku Andrawus</a>
+            <!-- FIXED: Injected the icon tag inside your mobile toggle trigger -->
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+                aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="planner.html">Academic planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">HI! WELCOME TO MY ACADEMIC SPACE</span>
+                    <h1>ISHAKU <em>ANDRAWUS</em></h1>
+                    <span class="eyebrow">A Software Engineer</span>
+                    <p class="aims">I am Ishaku Andrawus, a Fashion Designer, now a Software Engineer. I am currently
+                        pursuing my BSc at <span class="miva"> <a class="link" href="https://miva.edu.ng/"> MIVA Open
+                                University</a></span>. I am passionate
+                        about building innovative
+                        software solutions and exploring the latest technologies in the field of software
+                        development. This platform is where I manage my academic journey, track my tasks,
+                        and showcase my development work.</p>
+                    <div class="cta-row">
+                        <a href="project.html" class="btn-primary">View Project</a>
+                        <a href="contact.html" class="btn-ghost">Get in Touch</a>
+                    </div>
+                </div>
+
+                <div class="id-card">
+                    <div class="portrait">
+                        <img src="images/aims.jpeg" alt="Portrait of Ishaku Andrawus">
+                    </div>
+                </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <span class="intro">ABOUT ME</span>
+                    <p class="aims">I am a dedicated and passionate software engineer with a strong foundation in web
+                        development and computer science. My journey in technology began with a fascination for how
+                        things work, leading me to explore coding and software design. I am committed to continuous
+                        learning and growth, always seeking new challenges that push the boundaries of my skills.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" style="padding-top: 0px; padding-bottom: 4rem;">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-column">
+                        <section class="info-card">
+                            <h2><i class="fas fa-rocket"></i> Career Aspirations</h2>
+                            <p>
+                                My goal is to become a Full-Stack Web Developer. I am passionate about creating seamless
+                                digital experiences and hope to build software that solves real-world problems in the
+                                education
+                                technology sector.
+                            </p>
+                        </section>
+                        <section class="info-card">
+                            <div class="video-container">
+                                <p> A demo video showcasing my coding projects</p>
+                                <video controls width="100%">
+                                    <source src="Video/demo.mp4" type="video/mp4"
+                                        alt="Video demonstration of Ishaku Andrawus's coding projects">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="about-column">
+                        <section class="info-card">
+                            <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+                            <ul class="skills-list">
+                                <li>HTML5 & Semantic Markup</li>
+                                <li>JavaScript (DOM Manipulation)</li>
+                                <li>Responsive Web Design</li>
+                                <li>Version Control (Git/GitHub)</li>
+                                <li>Computer Hardware Repair</li>
+                            </ul>
+                        </section>
+
+                        <section class="info-card">
+                            <h2><i class="fas fa-gamepad"></i> Hobbies & Interests</h2>
+                            <ul class="skills-list">
+                                <li>Coding</li>
+                                <li>Reading</li>
+                                <li>Playing Video Games</li>
+                            </ul>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <footer class="site-footer">
+        <p>&copy; 2026 Ishaku Andrawus. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

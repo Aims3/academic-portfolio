@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Ishaku Andrawus Academic Portfolio</title>
+    <meta name="description"
+        content="Manage your coursework, assignments, and study sessions dynamically with the Ishaku Andrawus Academic Planner.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="primary">
+            <a href="index.html" class="brand"><span class="brand-mark">IS</span> Ishaku Andrawus</a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+                aria-label="Toggle navigation menu"></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="planner.html" aria-current="page">Academic planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="planner-grid container">
+
+            <p class="planner-intro">Welcome to my Academic Planner! This tool is designed
+                to help you manage your coursework, assignments, and study sessions dynamically.
+                You can add tasks, categorize them, set priorities, and track your progress over time.
+                Use the filters to view tasks by status or category, and keep your academic life organized!</p>
+            <div class="task-form-card">
+                <span class="eyebrow">NEW TASK</span>
+                <h2>Add a Task</h2>
+
+                <form id="todo-form" class="task-form">
+                    <div class="form-group">
+                        <label for="task-desc">Task Description *</label>
+                        <input type="text" id="task-desc" placeholder="e.g., Submit CSC-106 Lab report" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-category">Category *</label>
+                        <select id="task-category">
+                            <option value="Assignments">📝 Assignment</option>
+                            <option value="Projects">💻 Project</option>
+                            <option value="Exam Prep">📚 Exam Prep</option>
+                            <option value="Other">⚙️ Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-priority">Priority *</label>
+                        <select id="task-priority">
+                            <option value="High">🔴 High Priority</option>
+                            <option value="Medium" selected>🟡 Medium Priority</option>
+                            <option value="Low">🟢 Low Priority</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-date">Due Date (optional)</label>
+                        <input type="date" id="task-date">
+                    </div>
+
+                    <button type="submit" class="btn-add-task">+ Add Task</button>
+                </form>
+
+                <div class="task-stats-box">
+                    <div class="stat-line">
+                        <span>Total tasks</span>
+                        <span id="stat-total" class="stat-num">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span>Completed</span>
+                        <span id="stat-completed" class="stat-num text-green">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span>Remaining</span>
+                        <span id="stat-remaining" class="stat-num text-orange">0</span>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div id="stat-progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tasks-display-column">
+                <div class="display-header">
+                    <div>
+                        <h2>My Tasks</h2>
+                        <span id="header-counter" class="sub-counter">0/0 completed</span>
+                    </div>
+                    <button id="clear-done-btn" class="btn-clear">Clear Done</button>
+                </div>
+
+                <div class="filter-row">
+                    <button class="filter-pill active" data-filter="All">All</button>
+                    <button class="filter-pill" data-filter="Active">Active</button>
+                    <button class="filter-pill" data-filter="Completed">Completed</button>
+                    <button class="filter-pill" data-filter="Assignments">Assignments</button>
+                    <button class="filter-pill" data-filter="Projects">Projects</button>
+                    <button class="filter-pill" data-filter="Exam Prep">Exam Prep</button>
+                </div>
+
+                <ul id="task-list" class="planner-task-list"></ul>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <footer class="site-footer">
+        <p>&copy; 2026 Ishaku Andrawus. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

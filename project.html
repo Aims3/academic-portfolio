@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ishaku Andrawus Academic Portfolio</title>
+    <meta name="description" content="A showcase of technical web development and computer science projects built by Ishaku Andrawus.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="primary">
+            <a href="index.html" class="brand"><span class="brand-mark">IS</span> Ishaku Andrawus</a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu"></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html" aria-current="page">Projects</a></li>
+                <li><a href="planner.html">Academic planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="about-section"> <div class="container">
+                
+                <h1 class="page-title">My <span>Projects</span></h1>
+                
+                <div class="card-content" style="max-width: 700px; margin: 0 auto 3rem auto; padding: 0;">
+                    <p style="color: #ffffff; font-size: 1.1rem; line-height: 1.7; text-align: center;">
+                        Here is a showcase of the technical projects I have built while exploring web development and computer science.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="info-card project-card">
+                        <div class="project-image">
+                            <img src="images/project.jpg" alt="Screenshot of Personal Portfolio Website">
+                        </div>
+                        <div class="project-info">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>A responsive multi-page website built with semantic HTML5, custom CSS3 properties, and vanilla JavaScript. Designed to showcase my academic progress.</p>
+                            <ul class="skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="index.html" class="btn-ghost project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="info-card project-card">
+                        <div class="project-image">
+                            <img src="images/landing-page.jpg" alt="Screenshot of Academic Landing Page">
+                        </div>
+                        <div class="project-info">
+                            <h3>Landing Page Concept</h3>
+                            <p>A clean, modern landing page focusing on layout structure, typography hierarchy, and a mobile-first user experience using CSS Flexbox configurations.</p>
+                            <ul class="skills-list">
+                                <li>CSS Flexbox</li>
+                                <li>UI Design</li>
+                            </ul>
+                            <a href="https://dribbble.com/" class="btn-ghost project-btn simulated">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="info-card project-card">
+                        <div class="project-image">
+                            <img src="images/Interactive java.jpg" alt="Screenshot of Interactive JavaScript App">
+                        </div>
+                        <div class="project-info">
+                            <h3>Interactive JavaScript</h3>
+                            <p>An early-stage web application designed to practice fundamental DOM manipulation, handling click events, and dynamically updating webpage data.</p>
+                            <ul class="skills-list">
+                                <li>JavaScript</li>
+                                <li>DOM Manipulation</li>
+                            </ul>
+                            <a href="https://github.com/" class="btn-ghost project-btn simulated">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+
+                </div> </div> </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+ <footer class="site-footer">
+          <p>&copy; 2026 Ishaku Andrawus. All rights reserved.</p>
+ </footer>
+</html>
